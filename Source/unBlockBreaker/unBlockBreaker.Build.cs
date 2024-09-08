@@ -8,6 +8,10 @@ public class unBlockBreaker : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
+		privateIncludePaths.AddRange(new string[] { "unBlockBreaker/Private" });
+
+		PublicIncludePaths.AddRange(new string[] { "unBlockBreaker/Public" });
+
 		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput" });
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
